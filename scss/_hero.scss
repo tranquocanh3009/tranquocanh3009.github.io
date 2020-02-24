@@ -1,0 +1,64 @@
+.hero {
+    &__header {
+        padding-top: 60px;
+        background-image: url('/images/bg-header-mobile.png');
+        background-size: cover;
+        background-position: center top;
+
+        @include breakpoint(large) {     
+            padding-top: 142px;
+        }
+
+        @include breakpoint(small) {
+            padding-top: 130px;
+            background-image: url('/images/bg-header-desktop.png');
+        }
+    }
+
+    
+    &__content {
+        padding-top: 60px;
+        
+    }
+
+    &__logo {
+        margin-bottom: 70px;
+    }
+
+    &__subHeadline{
+        line-height: 1.6;
+        @include breakpoint(large) {
+            font-size: 1.11rem;
+        }
+    }
+
+    h1 {
+        @include breakpoint(small) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__img {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    #heroImage2 {
+        @include breakpoint(medium) {    
+            margin-left: -70px;
+            width: 120%;
+        }  
+    }
+
+    &__grid {
+        @include breakpoint(large) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 10px;
+            padding: 10px;
+        }  
+    }
+    margin-bottom: 140px;
+}
