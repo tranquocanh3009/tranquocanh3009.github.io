@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h4 {
+    font-family: $fontHead;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $darkBlue;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+h1 {
+    padding-top: 14px;
+    
+}
+
+body {
+    font-family: $fontBody;
+    font-weight: 400;
+    color: $grayBlue;
+    font-size: 18px;
+}
+
+
+
+.h4sub {
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: $grayBlue;
+    opacity: 0.6;
+    font-size: 11px;
+}
+
+.container {
+    padding-left: 32px;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        a {
+            text-decoration: none;
+        }
+        margin: 10px;
+    }
+}
+
+#cover {
+    margin-top: 64px;
+    margin-bottom: 87px;
+    width: 100%;
+    
+}
+
+.btn-fake {
+    border-radius: 13px;
+    padding: 6px 12px;
+    background-color: $darkBlue;
+    color: $lightGrayBlue;
+}
+
+button {
+    margin: 0px;
+    background-color: $primary;
+    padding:  12px 23px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    h4 {
+        color: $lightGrayBlue;
+        letter-spacing: 1px;
+    }
+}
+
+header {
+    margin-top: 38px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 16px;
+}
+
+.grid-button {
+    .h4sub {
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    padding-top: 12px;
+    height: 38.4px;
+    line-height: 38.4px;
+}
+
+.attribution {
+    margin-top: 30px;
+}
+
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
