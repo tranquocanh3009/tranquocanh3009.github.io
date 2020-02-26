@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scss/style.css">
 
-  <title>Frontend Mentor | Project tracking intro component</title>
+  <title>Project Tracking Intro</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -23,12 +23,14 @@
   <div class="container">
     <header class="grid">
       <img src="images/logo.svg">
+      <img src="images/icon-hamburger.svg" id="menu">
       <nav>
-        <ul class="nav-item">
-          <li><a href=""><h4>Product</h4></a></li>
-          <li><a href=""><h4>Features</h4></a></li>
-          <li><a href=""><h4>Pricing</h4></a></li>
-          <li><a href=""><h4>Login</h4></a></li>
+        <ul class="nav-item modal" id="modal">
+          <li><a href="#"><h4>Product</h4></a></li>
+          <li><a href="#"><h4>Features</h4></a></li>
+          <li><a href="#"><h4>Pricing</h4></a></li>
+          <hr class="gray">
+          <li><a href="#"><h4>Login</h4></a></li>
         </ul>
       </nav>
     </header>
@@ -40,8 +42,8 @@
       <h4 class="h4sub">Monograph Dashboard</h4>
     </div>
 
-    <h1>Powerful insights<br/>into your team</h1>
-    <p>Project planning and time tracking<br/>for agile teams</p>
+    <h1>Powerful insights into your team</h1>
+    <p>Project planning and time tracking for agile teams</p>
     
     <div class="grid grid-button">
       <button><h4>Schedule a demo</h4></button>
@@ -51,8 +53,9 @@
   
   <footer>
     <p class="attribution">
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://fb.com/tranquocanh2000" target="_blank">Tran Quoc Anh</a>.
     </p>
   </footer>
+  <script src="js/dynamic.js"></script>
 </body>
 </html>

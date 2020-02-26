@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     color: $grayBlue;
     font-size: 18px;
+    margin: 0px;
 }
 
 
@@ -41,13 +42,13 @@ body {
 }
 
 .container {
-    padding-left: 32px;
+    padding-left: 8.5vw;
+    width: 91.5vw;
 }
 
 .nav-item {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    
     li {
         a {
             text-decoration: none;
@@ -59,8 +60,11 @@ body {
 #cover {
     margin-top: 64px;
     margin-bottom: 87px;
-    width: 100%;
-    
+    margin-left: -8.5vw;
+    width: 100vw;
+    height: 65vw;
+    object-fit: cover;
+    object-position: -8% 0;
 }
 
 .btn-fake {
@@ -85,12 +89,19 @@ button {
 
 header {
     margin-top: 38px;
+    width: 84vw;
 }
 
 .grid {
     display: grid;
     grid-template-columns: max-content auto;
     column-gap: 16px;
+}
+
+#menu {
+    margin-top: 8px;
+    margin-left: auto;
+    padding-right: 16px;
 }
 
 .grid-button {
@@ -112,4 +123,33 @@ ul {
     margin-block-end: 0em;
 }
 
+.modal {
+    overflow: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 26.67vw;
+    left: 8.5vw;
+    width: 85vw;
+    height: 235px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+    h4 {
+        font-size: 20px;
+        line-height: 41px;
+    }
+}
+ul {
+    padding-inline-start: 0px;
+}
 
+hr.gray {
+    width: 72vw;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 15px;
+  }
