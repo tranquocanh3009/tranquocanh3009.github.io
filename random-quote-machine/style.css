@@ -4,35 +4,28 @@
           box-sizing: border-box;
 }
 
-body, button {
+body {
   background-color: #333;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  color: white;
-  border: none;
   font-size: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #quote-box {
-  margin: 20vh auto auto auto;
   border-radius: 5px;
   background-color: white;
   color: #333;
-  padding: 5vw 5vw;
-  width: 80vw;
+  padding: 10px 20px 50px 20px;
+  width: 360px;
 }
 
-#quote-box #text {
-  width: 70vw;
+#quote-box .quote-text {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-#quote-box #author {
-  margin-top: 10px;
+#quote-box .quote-author {
+  margin-top: 5px;
   text-align: right;
   font-weight: 400;
 }
@@ -41,20 +34,32 @@ body, button {
   float: left;
 }
 
+#quote-box #tweet-quote:hover {
+  opacity: 0.9;
+}
+
 #quote-box #new-quote {
   float: right;
 }
 
-#quote-box button {
-  border-radius: 3px;
-  font-weight: 500;
-  padding: 10px;
+#quote-box .buttons {
+  margin-top: 10px;
 }
 
-.break {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  height: 0px;
-  width: 0px;
+#quote-box .buttons .button {
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+#wrapper {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
